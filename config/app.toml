@@ -1,0 +1,23 @@
+# Application config file.
+
+errorcode0 = "Process Successful."
+errorcode800 = "Error while insert transaction."
+errorcode900 = "Service Unavailable."
+
+
+
+[development]
+port = "8000"
+DBICC = "SIT62"
+DBATB2 = "QED"
+DBPED = "QED"
+queueurl = "amqp://admin:admin@172.19.218.104:5672"
+
+[production]
+port = "8000"
+DBICC = "ICC"
+DBATB2 = "ATB2"
+DBPED = "PED"
+queueurl = "amqp://admin:admin@172.19.218.104:5672"
+
+
