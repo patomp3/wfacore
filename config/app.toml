@@ -1,17 +1,21 @@
 # Application config file.
 
-errorcode0 = "Process Successful."
-errorcode800 = "Error while insert transaction."
-errorcode900 = "Service Unavailable."
+AppName = "WFACore"
 
+errorcode0 = "Process Successful."
+errorcode100 = "Invalid order or submit order fail."
+errorcode400 = "Mandatory field required."
+errorcode900 = "Service Unavailable."
 
 
 [development]
 port = "8000"
-DBICC = "SIT62"
+DBICC = "UAT62"
 DBATB2 = "QED"
 DBPED = "QED"
 queueurl = "amqp://admin:admin@172.19.218.104:5672"
+env = "DEV-UAT62"
+
 
 [production]
 port = "8000"
@@ -19,5 +23,5 @@ DBICC = "ICC"
 DBATB2 = "ATB2"
 DBPED = "PED"
 queueurl = "amqp://admin:admin@172.19.218.104:5672"
-
+env = "PROD-ICC"
 
